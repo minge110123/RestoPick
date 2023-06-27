@@ -7,18 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B45595872A48E4E3009D8AE7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45595862A48E4E3009D8AE7 /* Restaurant.swift */; };
+		B45595892A48E52E009D8AE7 /* RestaurantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45595882A48E52E009D8AE7 /* RestaurantList.swift */; };
+		B4683FF02A474A2A0099A2AD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4683FEF2A474A2A0099A2AD /* CoreLocation.framework */; };
+		B4683FF22A474D6E0099A2AD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4683FF12A474D6E0099A2AD /* LocationManager.swift */; };
 		B4F6DE9E2A45D6AB00EC9600 /* RestoPickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6DE9D2A45D6AB00EC9600 /* RestoPickApp.swift */; };
 		B4F6DEA02A45D6AB00EC9600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6DE9F2A45D6AB00EC9600 /* ContentView.swift */; };
 		B4F6DEA22A45D6AD00EC9600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F6DEA12A45D6AD00EC9600 /* Assets.xcassets */; };
 		B4F6DEA52A45D6AD00EC9600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F6DEA42A45D6AD00EC9600 /* Preview Assets.xcassets */; };
+		B4F6DEAC2A45D6CF00EC9600 /* URLRequset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6DEAB2A45D6CF00EC9600 /* URLRequset.swift */; };
+		B4FBB5142A47633300433404 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBB5132A47633300433404 /* Home.swift */; };
+		B4FBB5192A47680A00433404 /* RestoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBB5182A47680A00433404 /* RestoList.swift */; };
+		B4FBB51B2A476B3B00433404 /* rast.json in Resources */ = {isa = PBXBuildFile; fileRef = B4FBB51A2A476B3B00433404 /* rast.json */; };
+		B4FBB51D2A488CF900433404 /* RestoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBB51C2A488CF900433404 /* RestoView.swift */; };
+		B4FBB51F2A488F6700433404 /* RestoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBB51E2A488F6700433404 /* RestoListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B45595862A48E4E3009D8AE7 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		B45595882A48E52E009D8AE7 /* RestaurantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantList.swift; sourceTree = "<group>"; };
+		B4683FEF2A474A2A0099A2AD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B4683FF12A474D6E0099A2AD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B4F6DE9A2A45D6AB00EC9600 /* RestoPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestoPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F6DE9D2A45D6AB00EC9600 /* RestoPickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoPickApp.swift; sourceTree = "<group>"; };
 		B4F6DE9F2A45D6AB00EC9600 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4F6DEA12A45D6AD00EC9600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4F6DEA42A45D6AD00EC9600 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4F6DEAB2A45D6CF00EC9600 /* URLRequset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequset.swift; sourceTree = "<group>"; };
+		B4FBB5132A47633300433404 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B4FBB5182A47680A00433404 /* RestoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoList.swift; sourceTree = "<group>"; };
+		B4FBB51A2A476B3B00433404 /* rast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = rast.json; path = ../../../rast.json; sourceTree = "<group>"; };
+		B4FBB51C2A488CF900433404 /* RestoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoView.swift; sourceTree = "<group>"; };
+		B4FBB51E2A488F6700433404 /* RestoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +46,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4683FF02A474A2A0099A2AD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B45595852A48E4B8009D8AE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B45595862A48E4E3009D8AE7 /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4683FEE2A474A2A0099A2AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4683FEF2A474A2A0099A2AD /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4F6DE912A45D6AB00EC9600 = {
 			isa = PBXGroup;
 			children = (
 				B4F6DE9C2A45D6AB00EC9600 /* RestoPick */,
 				B4F6DE9B2A45D6AB00EC9600 /* Products */,
+				B4683FEE2A474A2A0099A2AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +91,11 @@
 			children = (
 				B4F6DE9D2A45D6AB00EC9600 /* RestoPickApp.swift */,
 				B4F6DE9F2A45D6AB00EC9600 /* ContentView.swift */,
+				B45595852A48E4B8009D8AE7 /* Model */,
+				B4FBB5172A47672B00433404 /* ViewModel */,
+				B4FBB5152A4766EA00433404 /* View */,
 				B4F6DEA12A45D6AD00EC9600 /* Assets.xcassets */,
+				B4FBB51A2A476B3B00433404 /* rast.json */,
 				B4F6DEA32A45D6AD00EC9600 /* Preview Content */,
 			);
 			path = RestoPick;
@@ -65,6 +107,27 @@
 				B4F6DEA42A45D6AD00EC9600 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4FBB5152A4766EA00433404 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4FBB5132A47633300433404 /* Home.swift */,
+				B4FBB51E2A488F6700433404 /* RestoListView.swift */,
+				B4FBB51C2A488CF900433404 /* RestoView.swift */,
+				B4FBB5182A47680A00433404 /* RestoList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4FBB5172A47672B00433404 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B45595882A48E52E009D8AE7 /* RestaurantList.swift */,
+				B4683FF12A474D6E0099A2AD /* LocationManager.swift */,
+				B4F6DEAB2A45D6CF00EC9600 /* URLRequset.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4F6DEA52A45D6AD00EC9600 /* Preview Assets.xcassets in Resources */,
+				B4FBB51B2A476B3B00433404 /* rast.json in Resources */,
 				B4F6DEA22A45D6AD00EC9600 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4683FF22A474D6E0099A2AD /* LocationManager.swift in Sources */,
+				B45595892A48E52E009D8AE7 /* RestaurantList.swift in Sources */,
 				B4F6DEA02A45D6AB00EC9600 /* ContentView.swift in Sources */,
+				B4FBB51F2A488F6700433404 /* RestoListView.swift in Sources */,
+				B4FBB51D2A488CF900433404 /* RestoView.swift in Sources */,
+				B4FBB5142A47633300433404 /* Home.swift in Sources */,
+				B45595872A48E4E3009D8AE7 /* Restaurant.swift in Sources */,
+				B4F6DEAC2A45D6CF00EC9600 /* URLRequset.swift in Sources */,
 				B4F6DE9E2A45D6AB00EC9600 /* RestoPickApp.swift in Sources */,
+				B4FBB5192A47680A00433404 /* RestoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +342,7 @@
 				DEVELOPMENT_TEAM = L3JN6ASK5J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Location ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +372,7 @@
 				DEVELOPMENT_TEAM = L3JN6ASK5J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Location ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
