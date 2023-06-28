@@ -18,7 +18,6 @@
 		B4F6DEAC2A45D6CF00EC9600 /* URLRequset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6DEAB2A45D6CF00EC9600 /* URLRequset.swift */; };
 		B4FBB5142A47633300433404 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBB5132A47633300433404 /* Home.swift */; };
 		B4FBB5192A47680A00433404 /* RestoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBB5182A47680A00433404 /* RestoList.swift */; };
-		B4FBB51B2A476B3B00433404 /* rast.json in Resources */ = {isa = PBXBuildFile; fileRef = B4FBB51A2A476B3B00433404 /* rast.json */; };
 		B4FBB51D2A488CF900433404 /* RestoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBB51C2A488CF900433404 /* RestoView.swift */; };
 		B4FBB51F2A488F6700433404 /* RestoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBB51E2A488F6700433404 /* RestoListView.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,6 @@
 		B4F6DEAB2A45D6CF00EC9600 /* URLRequset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequset.swift; sourceTree = "<group>"; };
 		B4FBB5132A47633300433404 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B4FBB5182A47680A00433404 /* RestoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoList.swift; sourceTree = "<group>"; };
-		B4FBB51A2A476B3B00433404 /* rast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = rast.json; path = ../../../rast.json; sourceTree = "<group>"; };
 		B4FBB51C2A488CF900433404 /* RestoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoView.swift; sourceTree = "<group>"; };
 		B4FBB51E2A488F6700433404 /* RestoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +93,6 @@
 				B4FBB5172A47672B00433404 /* ViewModel */,
 				B4FBB5152A4766EA00433404 /* View */,
 				B4F6DEA12A45D6AD00EC9600 /* Assets.xcassets */,
-				B4FBB51A2A476B3B00433404 /* rast.json */,
 				B4F6DEA32A45D6AD00EC9600 /* Preview Content */,
 			);
 			path = RestoPick;
@@ -124,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				B45595882A48E52E009D8AE7 /* RestaurantList.swift */,
-				B4683FF12A474D6E0099A2AD /* LocationManager.swift */,
 				B4F6DEAB2A45D6CF00EC9600 /* URLRequset.swift */,
+				B4683FF12A474D6E0099A2AD /* LocationManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -189,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4F6DEA52A45D6AD00EC9600 /* Preview Assets.xcassets in Resources */,
-				B4FBB51B2A476B3B00433404 /* rast.json in Resources */,
 				B4F6DEA22A45D6AD00EC9600 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

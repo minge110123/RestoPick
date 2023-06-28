@@ -8,25 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var locationManager = LocationManager()
+    
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Latitude: \(locationManager.latitude)")
-            Text("Longitude: \(locationManager.longitude)")
-
-            Button("Get Location") {
-                locationManager.requestLocation()
-            }
-        }
-        .padding()
-        .alert(isPresented: $locationManager.showErrorAlert) {
-            Alert(
-                title: Text("Error"),
-                message: Text("Unable to retrieve location information."),
-                dismissButton: .default(Text("OK"))
-            )
-        }
+        Home()
     }
         
 }

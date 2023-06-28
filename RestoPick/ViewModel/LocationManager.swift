@@ -24,16 +24,17 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     func requestLocation() {
         locationManager?.requestWhenInUseAuthorization()
-        locationManager?.startUpdatingLocation()
+        locationManager?.requestLocation()
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.last {
-           
-            self.latitude = location.coordinate.latitude
-            self.longitude = location.coordinate.longitude
-        }
-    }
+           if let location = locations.last {
+               DispatchQueue.main.async {
+                   self.latitude = location.coordinate.latitude
+                   self.longitude = location.coordinate.longitude
+               }
+           }
+       }
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Failed to get location: \(error)")

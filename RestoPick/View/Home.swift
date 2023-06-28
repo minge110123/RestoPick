@@ -17,11 +17,13 @@ struct Home: View {
     @State var isSheetPresented = false
     @State private var selectedOptionIndex = 2
     
+    @StateObject private var viewModel = RestaurantsViewModel()
+    
     
     
     let distanceOptions = [ "300M", "500M","1000M","2000M", "3000M"]
 
-    let SortOrder = ["距离顺序","推荐顺序"]
+    let SortOrder = ["おススメ順","距離順"]
         
 
     var body: some View {
@@ -31,9 +33,9 @@ struct Home: View {
                 Divider()
                 locationSection()
                 Divider()
-                distancePickerSection()
+                rangeSection()
                 Divider()
-                resultQuantitySection()
+                countSection()
                 Divider()
             }
             
@@ -42,9 +44,14 @@ struct Home: View {
             searchButton()
             Spacer()
         }
+        .onAppear {
+            locationManager.requestLocation()
+
+        }
+
     }
     
-    // Title section with RestoPick text
+    
     private func titleSection() -> some View {
         HStack {
             Text("RestoPick")
@@ -55,17 +62,17 @@ struct Home: View {
         }
     }
     
-    // Location input section
+    
     private func locationSection() -> some View {
         HStack {
-            Text("地点")
+            Text("場所")
                 .padding()
-            TextField("当前地点", text: $keyword)
+            TextField("現在地", text: $keyword)
         }
     }
     
-    // Distance picker section
-    private func distancePickerSection() -> some View {
+    
+    private func rangeSection() -> some View {
         HStack {
             Text("範囲")
                 .padding(.horizontal)
@@ -81,9 +88,9 @@ struct Home: View {
     }
     
     
-    private func resultQuantitySection() -> some View {
+    private func countSection() -> some View {
         HStack {
-            Text("显示数量")
+            Text("検索数量")
                 .padding()
             Stepper(value: $resultQuantity, in: 1...100) {
                 Text("\(resultQuantity)")
@@ -95,7 +102,7 @@ struct Home: View {
     
     private func sortOrderSection() -> some View {
         HStack {
-            Text("显示顺序")
+            Text("ソート順")
                 .padding()
             Picker(selection: $order, label: Text("")) {
                 ForEach(0..<2) { index in
@@ -112,16 +119,21 @@ struct Home: View {
         Button {
             // Handle search button action here
             isSheetPresented = true
-            if keyword == "" {
-                locationManager.requestLocation()
-              var  url = urlRequest.createURL(lat: locationManager.latitude, lng: locationManager.longitude, range: selectedOptionIndex+1, count: resultQuantity,order: order)!
-                print(url)
-            }else{
-             var   url = urlRequest.createURL(keyword: keyword, range: selectedOptionIndex+1, count: resultQuantity, order: order)!
-                print(url)
-                
-            }
-           
+            var urlre:URL
+                        if keyword == "" {
+                           
+                            urlre = urlRequest.createURL(lat: String(format: "%.3f", locationManager.latitude), lng: String(format: "%.3f", locationManager.longitude), range: selectedOptionIndex+1, count: resultQuantity, order: order)!
+                            
+                            print(urlre)
+                        } else {
+                            urlre = urlRequest.createURL(keyword: keyword, range: selectedOptionIndex+1, count: resultQuantity, order: order)!
+                        }
+            
+                        Task {
+                        await viewModel.fetchData(url: urlre)
+                            
+                            print(viewModel.restaurants.count)
+                        }
             
             
         } label: {
@@ -136,7 +148,7 @@ struct Home: View {
                 .padding()
         }
         .sheet(isPresented: $isSheetPresented) {
-            
+            RestoListView(viewModel: viewModel, isSheetPresented: $isSheetPresented)
         }
     }
 }

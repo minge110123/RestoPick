@@ -9,11 +9,11 @@ import SwiftUI
 
 struct RestoView: View {
     
-    var name:String//
-    var image: URL!//
-    var open:String //
-    var address:String //
-    var access:String//
+    var name:String
+    var image: URL!
+    var open:String
+    var address:String
+    var access:String
     
     
     var body: some View {
