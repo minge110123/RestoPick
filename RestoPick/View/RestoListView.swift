@@ -14,8 +14,14 @@ struct RestoListView: View {
     var body: some View {
         VStack {
             
+            
+            
             NavigationView {
                 List {
+                    if viewModel.restaurants.isEmpty {
+                        Text("条件に合致するものが見つかりませんでした")
+                            
+                    }
                               ForEach(viewModel.restaurants) { restaurant in
                                   NavigationLink(destination: RestoView(name: restaurant.name, image: URL(string: "\(restaurant.photos.mobile.l)"), open: restaurant.open, address: restaurant.address, access: restaurant.access)) {
                                       RestoList(logo_image: URL(string: "\(restaurant.logoImage)"), name: restaurant.name, point: restaurant.genre.point)
@@ -23,6 +29,7 @@ struct RestoListView: View {
                               }
                               .onDelete(perform: delete)
                           }
+                
                 
                 .navigationTitle("Resto")
                 
@@ -55,7 +62,11 @@ struct RestoListView: View {
             
             
             Button {
-                
+                if !viewModel.restaurants.isEmpty {
+                                    let randomIndex = Int.random(in: 0..<viewModel.restaurants.count)
+                                    let selectedRestaurant = viewModel.restaurants[randomIndex]
+                                    viewModel.restaurants = [selectedRestaurant]
+                                }
             }label: {
                 Text("Pick")
                     .font(.largeTitle)
