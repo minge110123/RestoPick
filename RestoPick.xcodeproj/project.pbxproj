@@ -11,6 +11,9 @@
 		B45595892A48E52E009D8AE7 /* RestaurantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45595882A48E52E009D8AE7 /* RestaurantList.swift */; };
 		B4683FF02A474A2A0099A2AD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4683FEF2A474A2A0099A2AD /* CoreLocation.framework */; };
 		B4683FF22A474D6E0099A2AD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4683FF12A474D6E0099A2AD /* LocationManager.swift */; };
+		B4728C052A4E3AC0004DCE3B /* 2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B4728C022A4E3AC0004DCE3B /* 2.PNG */; };
+		B4728C062A4E3AC0004DCE3B /* 3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B4728C032A4E3AC0004DCE3B /* 3.PNG */; };
+		B4728C072A4E3AC0004DCE3B /* 1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B4728C042A4E3AC0004DCE3B /* 1.PNG */; };
 		B4F6DE9E2A45D6AB00EC9600 /* RestoPickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6DE9D2A45D6AB00EC9600 /* RestoPickApp.swift */; };
 		B4F6DEA02A45D6AB00EC9600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6DE9F2A45D6AB00EC9600 /* ContentView.swift */; };
 		B4F6DEA22A45D6AD00EC9600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F6DEA12A45D6AD00EC9600 /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 		B45595882A48E52E009D8AE7 /* RestaurantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantList.swift; sourceTree = "<group>"; };
 		B4683FEF2A474A2A0099A2AD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B4683FF12A474D6E0099A2AD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B4728C022A4E3AC0004DCE3B /* 2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.PNG; sourceTree = "<group>"; };
+		B4728C032A4E3AC0004DCE3B /* 3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.PNG; sourceTree = "<group>"; };
+		B4728C042A4E3AC0004DCE3B /* 1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.PNG; sourceTree = "<group>"; };
 		B4F6DE9A2A45D6AB00EC9600 /* RestoPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestoPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F6DE9D2A45D6AB00EC9600 /* RestoPickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoPickApp.swift; sourceTree = "<group>"; };
 		B4F6DE9F2A45D6AB00EC9600 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +73,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B4728C012A4E3AC0004DCE3B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B4728C022A4E3AC0004DCE3B /* 2.PNG */,
+				B4728C032A4E3AC0004DCE3B /* 3.PNG */,
+				B4728C042A4E3AC0004DCE3B /* 1.PNG */,
+			);
+			name = images;
+			path = ../../../images;
+			sourceTree = "<group>";
+		};
 		B4F6DE912A45D6AB00EC9600 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +110,7 @@
 				B4FBB5172A47672B00433404 /* ViewModel */,
 				B4FBB5152A4766EA00433404 /* View */,
 				B4F6DEA12A45D6AD00EC9600 /* Assets.xcassets */,
+				B4728C012A4E3AC0004DCE3B /* images */,
 				B4F6DEA32A45D6AD00EC9600 /* Preview Content */,
 			);
 			path = RestoPick;
@@ -185,8 +203,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4728C052A4E3AC0004DCE3B /* 2.PNG in Resources */,
 				B4F6DEA52A45D6AD00EC9600 /* Preview Assets.xcassets in Resources */,
+				B4728C072A4E3AC0004DCE3B /* 1.PNG in Resources */,
 				B4F6DEA22A45D6AD00EC9600 /* Assets.xcassets in Resources */,
+				B4728C062A4E3AC0004DCE3B /* 3.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -317,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
