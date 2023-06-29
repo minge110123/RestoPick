@@ -47,3 +47,8 @@ iOS 15.0
 ### アドバイスして欲しいポイント
 飲食店の一覧リストを使いやすく、見やすくしたい。
 動画の作成方法。
+
+### 実行画像
+<img src="https://github.com/minge110123/RestoPick/blob/main/RestoPick.xcodeproj/1.PNG" width="30%" height="30%">
+<img src="https://github.com/minge110123/RestoPick/blob/main/RestoPick.xcodeproj/2.PNG" width="30%" height="30%">
+<img src="https://github.com/minge110123/RestoPick/blob/main/RestoPick.xcodeproj/3.PNG" width="30%" height="30%">
