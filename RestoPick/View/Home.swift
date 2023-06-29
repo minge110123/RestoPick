@@ -40,15 +40,33 @@ struct Home: View {
             }
             
             sortOrderSection()
-            Divider().padding()
+            Divider()
+                .padding(.bottom)
             searchButton()
             Spacer()
+            powerFor()
         }
         .onAppear {
             locationManager.requestLocation()
 
         }
 
+    }
+    
+    
+    private func powerFor() -> some View {
+        HStack {
+            Spacer()
+            AsyncImage(url:URL(string: "https://webservice.recruit.co.jp/banner/hotpepper-m.gif"), content: { image in
+                image.resizable().frame(width: 88, height: 35).padding()
+            
+                
+        }, placeholder: {
+            ProgressView()
+                .frame(width: 88, height: 35).padding()
+        })
+            
+        }
     }
     
     
@@ -132,7 +150,7 @@ struct Home: View {
                         Task {
                         await viewModel.fetchData(url: urlre)
                             
-                            print(viewModel.restaurants.count)
+                           
                         }
             
             
